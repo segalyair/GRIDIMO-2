@@ -1,0 +1,54 @@
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+caption{
+
+    height:40px;
+}
+
+td, th {
+
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+th .gridimoEditTextHeader{
+    display:none;
+}
+th .gridimoDeleteHeader {
+    color:red;
+}
+th .gridimoEditHeader {
+    color:lightskyblue;
+}
+.gridimoDeleteRowCell{
+    text-align: center;
+}
+td .gridimoDeleteRow {
+    color:red;
+}
+.hoverable:hover {
+    color:white;
+    cursor: pointer;
+}
+
+.gridimoHeaderRow{
+    display:none;
+}
+.gridimoHeaderCell{
+    display:none;
+}
+.gridimoRow{
+    display:none;
+}
+.gridimoFooterCell{
+    display:none;
+}
+

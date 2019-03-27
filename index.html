@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+</head>
+
+<body>
+
+    <table class="gridimoTable">
+
+        <caption class="gridimoCaption"></caption>
+
+        <thead class="gridimoHeader">
+            <tr class="gridimoHeaderActionsRow" width="100%">
+                <th class="gridimoHeaderActionsCell" width="100%" colspan="99">
+                    <input type="button" value="Add Column" onclick="gridimo.addColumn('New Column')">
+                </th>
+            </tr>
+            <tr class="gridimoHeaderRow">
+                <th class="gridimoHeaderCell">
+                    <input class="gridimoEditTextHeader" type="text" onkeyup="gridimo.editColumn(event)">
+                    <span class="gridimoEditHeader hoverable" onclick="gridimo.startEditingColumn(this)">&#9998</span>
+                    <span class="gridimoDeleteHeader hoverable" onclick="gridimo.deleteColumn(this)">&#10006</span>
+                </th>
+                <th class="gridimoHeaderDeleteRow">
+
+                </th>
+            </tr>
+        </thead>
+
+        <tbody class="gridimoBody">
+            <tr class="gridimoRow">
+                <td class="gridimoCell">
+                </td>
+                <td class="gridimoDeleteRowCell" width="40px">
+                    <span class="gridimoDeleteRow hoverable" onclick="gridimo.deleteRow(this)">&#10006</span>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot class="gridimoFooter">
+            <tr class="gridimoFooterRow" width="100%">
+                <td class="gridimoFooterCell" width="100%" colspan="99">
+                    <input type="button" value="Add Row" onclick="gridimo.addRow()">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="js/constants.js"></script>
+    <script src="js/gridimo.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
